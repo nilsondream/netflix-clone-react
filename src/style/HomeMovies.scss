@@ -1,0 +1,48 @@
+.movie-card {
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: var(--border-0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+
+    .shadow {
+        position: absolute;
+        z-index: 1;
+        background: var(--black-1);
+        transition: var(--transition);
+        width: 100%;
+        height: 100%;
+        filter: opacity(0);
+    }
+
+    svg {
+        position: absolute;
+        z-index: 2;
+        font-size: 45px;
+        transform: scale(0);
+        transition: var(--transition);
+    }
+
+    &:hover .shadow {
+        filter: opacity(.5);
+        transition: var(--transition);
+    }
+
+    &:hover svg {
+        transform: scale(1);
+        transition: var(--transition);
+    }
+}
+
+.movie-title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}

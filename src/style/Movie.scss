@@ -1,0 +1,93 @@
+.movie-grid-container {
+    padding: 50px 155px;
+
+    .movie-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        input {
+            font-size: 15px;
+            border-radius: var(--border-1);
+            font-family: inherit;
+            //font-weight: 600;
+            outline: none;
+            border: none;
+            padding: 10px 15px;
+            width: 250px;
+            color: inherit;
+            background: var(--black-3);
+            //border: 2px solid var(--black-5);
+        }
+
+        button {
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: var(--border-1);
+            padding: 10px 16px;
+            background: var(--black-4);
+            cursor: pointer;
+            background: var(--red-1);
+            transition: var(--transition);
+
+            &:hover {
+                background: var(--white-1);
+                color: var(--black-1);
+                transition: var(--transition);
+            }
+        }
+    }
+
+    .movie-grid {
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 30px 15px;
+    }
+
+    .movie-grid-loadmore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        button {
+            cursor: pointer;
+            background: var(--black-3);
+            border: 2px solid var(--black-5);
+            padding: 8px 16px;
+            border-radius: var(--border-1);
+            transition: var(--transition);
+            font-weight: 600;
+
+            &:hover {
+                background: var(--black-5);
+                transition: var(--transition);
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .movie-grid-container {
+        padding: 40px 20px;
+
+        .movie-search {
+            input {
+                width: 100%;
+            }
+        }
+
+        .movie-grid {
+            padding: 20px 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px 15px;
+        }
+
+        .movie-grid-loadmore {
+            margin-bottom: unset;
+            margin-top: 20px;
+        }
+    }
+}
