@@ -3,7 +3,7 @@ import { useParams } from 'react-router'
 import tmdbApi from '../api/tmdbApi'
 import apiConfig from '../api/apiConfing'
 import MovieList from '../components/MovieList'
-import { BsPlayCircleFill, BsPlus } from "react-icons/bs"
+import { BsPlayFill, BsPlus, BsHandThumbsUp } from "react-icons/bs"
 
 const Detail = () => {
 
@@ -41,8 +41,9 @@ const Detail = () => {
                                 <p>{item.overview}</p>
 
                                 <div className='btns'>
-                                    <button>Ver ahora <BsPlayCircleFill /></button>
-                                    <button><BsPlus /> Más info</button>
+                                    <button><BsPlayFill />Reproducir</button>
+                                    <span><BsPlus /></span>
+                                    <span><BsHandThumbsUp /></span>
                                 </div>
                             </div>
                         </div>

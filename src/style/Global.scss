@@ -19,8 +19,8 @@
     --red-1: #e50914;
 
     --border-0: 3px;
-    --border-1: 8px;
-    --border-2: 16px;
+    --border-1: 5px;
+    --border-2: 10px;
 
     --transition: .3s ease;
 }
@@ -33,7 +33,7 @@ html,
 body {
     font-family: 'Space Grotesk', sans-serif;
     color: var(--white-1);
-    background: var(--black-1);
+    background: var(--black-0);
 }
 
 a {
