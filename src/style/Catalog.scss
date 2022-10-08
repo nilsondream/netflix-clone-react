@@ -19,7 +19,7 @@
             z-index: 2;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+            background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25));
         }
 
         h1 {
@@ -34,7 +34,7 @@
 @media (max-width: 600px) {
     .catalog-container {
         .category-container {
-            min-height: 30vh;
+            min-height: 20vh;
 
             h1 {
                 font-size: 45px;

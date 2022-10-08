@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { BsPerson } from "react-icons/bs"
-import { CgMenuLeft, CgClose } from "react-icons/cg"
-import { RiHome5Fill, RiTvFill, RiFilmFill, RiHistoryLine, RiStarFill, RiBookmark2Line, RiDownload2Line, RiSettings3Line, RiErrorWarningLine } from "react-icons/ri"
+import { CgMenu, CgClose } from "react-icons/cg"
+import { RiHome5Fill, RiTvFill, RiFilmFill, RiHistoryLine, RiStarFill, RiBookmarkLine, RiDownload2Line, RiSettings3Line, RiErrorWarningLine } from "react-icons/ri"
 import Logo from '../assets/netflixlogo.png'
 
 const Navbar = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className='btn-mobile' onClick={showSidebar}><CgMenuLeft /></div>
+                <div className='btn-mobile' onClick={showSidebar}><CgMenu /></div>
             </div>
 
             <div className={sidebar ? 'sidebar-mobile sidebar-mobile-active' : 'sidebar-mobile'}>
@@ -49,15 +49,15 @@ const Navbar = () => {
                     </div>
                     <span className='line' />
                     <div className='links'>
-                        <a to='/' onClick={showSidebar}><RiHistoryLine />Recientes</a>
-                        <a to='/' onClick={showSidebar}><RiBookmark2Line />Bootmark</a>
-                        <a to='/' onClick={showSidebar}><RiStarFill />Destacados</a>
-                        <a to='/' onClick={showSidebar}><RiDownload2Line />Descargas</a>
+                        <span onClick={showSidebar}><RiHistoryLine />Recientes</span>
+                        <span onClick={showSidebar}><RiBookmarkLine />Guardados</span>
+                        <span onClick={showSidebar}><RiStarFill />Destacados</span>
+                        <span onClick={showSidebar}><RiDownload2Line />Descargas</span>
                     </div>
                     <span className='line' />
                     <div className='links'>
-                        <a to='/' onClick={showSidebar}><RiSettings3Line />Ajustes</a>
-                        <a to='/' onClick={showSidebar}><RiErrorWarningLine />Ayuda</a>
+                        <span onClick={showSidebar}><RiSettings3Line />Ajustes</span>
+                        <span onClick={showSidebar}><RiErrorWarningLine />Ayuda</span>
                     </div>
                     <button onClick={showSidebar}>Iniciar sesión</button>
                 </div>

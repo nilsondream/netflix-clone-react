@@ -93,7 +93,7 @@
         padding: 20px;
 
         svg {
-            font-size: 25px;
+            font-size: 35px;
         }
     }
 
@@ -110,7 +110,7 @@
             align-items: flex-start;
             gap: 20px;
 
-            a {
+            a, span {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
